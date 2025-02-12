@@ -54,7 +54,7 @@ section{
     width: 849px;
     height: 223px;
     padding-left: 30px;
-    z-index: 2;
+    z-index: 0;
 }
 
 .main-title{
@@ -342,6 +342,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    margin-top: 30px;
 }
 
 .logo{
@@ -355,6 +356,46 @@ footer{
     transform: scale(1.2, 1.2);
 }
 
+.mobile-button{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+.hide{
+    display: none;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #200153;
+    min-height: 100vh;
+}
+
+.mobile-nav{
+    height: 60vh;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-links{
+    margin-bottom: 20px;
+    width: 210px;
+    height: 50px;
+}
+
+.off-scroll{
+    overflow: hidden;
+}
+
+
 @media (max-width:1000px){
     .nav-links{
         display: none;
@@ -365,7 +406,8 @@ footer{
         padding-top: 10px;
     }
     .main-content{
-        max-width: 320px;
+        max-width: 350px;
+        height: 200px;
     }
     .main-title{
         padding-top: 30px;
@@ -374,7 +416,7 @@ footer{
     .main-subtitle{
         font-size: 15px;
     }
-    .planet, .moving-cloud, .moving-planet2{
+    .planet, .moving-cloud, .moving-planet2, .moving-planet{
         display: none;
     }
     .title{
@@ -383,7 +425,6 @@ footer{
     }
     .about-block{
         flex-direction: column;
-        margin-top: 20px;
         padding: 0;
     }
     .about-card{
@@ -395,11 +436,13 @@ footer{
     }
     .about-card img{
         width: 85%;
+
     }
     .about-content{
         width: 75%;
         height: 250px;
         margin-bottom: 20px;
+        display: block;
     }
     .about-title{
         font-size: 18px;
@@ -408,6 +451,7 @@ footer{
         margin: 20px;
         padding-left: 10px;
         background-size: contain;
+        
     }
     .skills-card p{
         font-size: 16px;
@@ -438,11 +482,26 @@ footer{
     }
     .comment{
         background-image: url(img/comment-mobile.png);
+        background-repeat: no-repeat;
     }
     .comment p{
         font-size: 15px;
         max-width: 290px;
     }
+    .button{
+        width: 150px;
+        height: 40px;
+        z-index: 0;
+    }
+    .button a{
+        font-size: 15px;
+    }
+    .mobile-button {
+        display: block;
+    }
 }
+
+
+
 
 
